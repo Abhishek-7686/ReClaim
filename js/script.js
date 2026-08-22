@@ -1,5 +1,4 @@
 // ===== Mobile Menu =====
-// When the menu button is clicked, show or hide the nav links
 let menuBtn = document.getElementById("menuBtn");
 let navLinks = document.getElementById("navLinks");
 
@@ -8,20 +7,13 @@ if (menuBtn) {
         navLinks.classList.toggle("active");
     };
 }
-
-
 // ===== Home Page Stats =====
-// These are just sample numbers for now.
-// Later we can get real numbers from the backend.
 let totalItems = document.getElementById("totalItems");
-
 if (totalItems) {
     document.getElementById("totalItems").textContent = 0;
     document.getElementById("availableItems").textContent = 0;
     document.getElementById("claimedItems").textContent = 0;
 }
-
-
 // ===== Student / Admin Toggle (Login & Register pages) =====
 let studentBtn = document.getElementById("studentBtn");
 let adminBtn = document.getElementById("adminBtn");
@@ -35,12 +27,11 @@ if (studentBtn && adminBtn) {
         showAdmin();
     };
 }
-
 function showStudent() {
     studentBtn.classList.add("active");
     adminBtn.classList.remove("active");
 
-    // Register page: swap which form is visible
+    // Register page
     let studentForm = document.getElementById("studentForm");
     let adminForm = document.getElementById("adminForm");
     if (studentForm && adminForm) {
@@ -48,7 +39,7 @@ function showStudent() {
         adminForm.classList.add("hidden");
     }
 
-    // Login page: just remember the chosen role
+    // Login page
     let loginRole = document.getElementById("loginRole");
     let loginBtn = document.getElementById("loginBtn");
     if (loginRole && loginBtn) {
@@ -56,12 +47,11 @@ function showStudent() {
         loginBtn.textContent = "Login as Student";
     }
 }
-
 function showAdmin() {
     adminBtn.classList.add("active");
     studentBtn.classList.remove("active");
 
-    // Register page: swap which form is visible
+    // Register page
     let studentForm = document.getElementById("studentForm");
     let adminForm = document.getElementById("adminForm");
     if (studentForm && adminForm) {
@@ -69,7 +59,7 @@ function showAdmin() {
         studentForm.classList.add("hidden");
     }
 
-    // Login page: just remember the chosen role
+    // Login page
     let loginRole = document.getElementById("loginRole");
     let loginBtn = document.getElementById("loginBtn");
     if (loginRole && loginBtn) {
@@ -77,8 +67,6 @@ function showAdmin() {
         loginBtn.textContent = "Login as Admin";
     }
 }
-
-
 // ===== Login Form =====
 let loginForm = document.getElementById("loginForm");
 
@@ -97,8 +85,6 @@ if (loginForm) {
         alert("Login clicked as " + role + "! (Backend not connected yet)");
     };
 }
-
-
 // ===== Student Register Form =====
 let studentForm = document.getElementById("studentForm");
 
@@ -120,8 +106,6 @@ if (studentForm) {
         alert("Student registered! (Backend not connected yet)");
     };
 }
-
-
 // ===== Admin Register Form =====
 let adminForm = document.getElementById("adminForm");
 
@@ -140,6 +124,6 @@ if (adminForm) {
 
         let name = document.getElementById("adminName").value;
         console.log("Admin Name:", name);
-        alert("Admin registered! (Backend not connected yet)");
+        alert("Admin registered");
     };
 }
