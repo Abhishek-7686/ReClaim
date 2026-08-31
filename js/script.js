@@ -124,6 +124,27 @@ if (adminForm) {
 
         let name = document.getElementById("adminName").value;
         console.log("Admin Name:", name);
-        alert("Admin registered");
+        alert("Admin registered! (Backend not connected yet)");
+    };
+}
+// ===== Contact Form =====
+let contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+    contactForm.onsubmit = function (event) {
+        event.preventDefault(); // stop page from refreshing
+
+        let name = document.getElementById("contactName").value;
+        let email = document.getElementById("contactEmail").value;
+        let subject = document.getElementById("contactSubject").value;
+        let message = document.getElementById("contactMessage").value;
+
+        console.log("Contact Name:", name);
+        console.log("Contact Email:", email);
+        console.log("Contact Subject:", subject);
+        console.log("Contact Message:", message);
+
+        alert("Message sent! (Backend not connected yet)");
+        contactForm.reset();
     };
 }
