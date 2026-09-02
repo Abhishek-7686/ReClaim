@@ -1,4 +1,4 @@
-# <Project ReClaim>
+# ReClaim
 
 > Replace every angle-bracket placeholder below. The hygiene check in CI will
 > fail until you do.
@@ -11,7 +11,7 @@
 
 ## About
 
-<Two or three sentences on what this application does.>
+ReClaim is a centralized digital platform that helps individuals report missing items or list found belongings to facilitate their return. It streamlines the recovery process by matching descriptions, locations, and dates of lost property with found entries. This online system replaces traditional physical logs, making it faster and easier for owners to reconnect with their lost valuables.
 
 ## Tech stack
 
