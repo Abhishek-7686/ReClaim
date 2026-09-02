@@ -1,16 +1,32 @@
+# Dependencies
+node_modules/
 venv/
-env/
 .venv/
-
 __pycache__/
-*.pyc
+target/
+vendor/
 
+# Build output
+dist/
+build/
+*.class
+*.jar
+
+# Environment and secrets
 .env
+.env.*
+*.pem
+*.key
 
+# Editor and OS
 .vscode/
 .idea/
+.DS_Store
+Thumbs.db
 
+# Logs
 *.log
+npm-debug.log*
 
-uploads/*
-!uploads/.gitkeep
+# but keep the example file
+!.env.example
