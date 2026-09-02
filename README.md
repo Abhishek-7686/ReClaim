@@ -15,10 +15,11 @@
 
 ## Tech stack
 
-- Frontend: <e.g. React>
-- Backend: <e.g. Node.js / Express>
-- Database: <e.g. MongoDB>
+## Tech stack
 
+- Frontend: HTML, CSS, JavaScript
+- Backend: Node.js
+- Database: MongoDB
 ## Running locally
 
 ```bash
